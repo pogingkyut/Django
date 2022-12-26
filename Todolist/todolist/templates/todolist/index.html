@@ -1,0 +1,16 @@
+<h1>Home</h1>
+<table>
+    <tr>
+        <th>Title</th>
+        <th></th>
+        <th></th>
+    </tr>
+
+    {% for d in data %}
+    <tr>
+        <td>{{d.title}}</td>
+        <td><a href="{% url d.id %}">view</a></td>
+        <td><a href="">delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
